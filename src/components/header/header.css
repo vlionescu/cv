@@ -1,0 +1,43 @@
+header {
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 3px 2px gray;
+}
+
+.header__info {
+    width: 60%;
+    height: 100%;
+    background: #f2e305;
+    position: relative;
+    flex: 4;
+    display: flex;
+}
+
+.header__personal-info {
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.header__info--after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    border-top: 400px solid #f2e305;
+    border-right: 100px solid transparent;
+    transition: all 1.5s ease;
+    width: 0;
+}
+
+.header__info--after:hover {
+    border-right: 100px solid transparent;
+    right: -100%;
+    width: 100%;
+}
+
+.header__photo-container {
+    background-image: url("/me.jpg");
+    background-size:cover;
+    background-position: center center;
+    flex: 3;
+}
